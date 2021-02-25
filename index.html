@@ -4,30 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <title>Estilizando Formularios</title>
   </head>
   <body>
     <h2>Estilizando Formularios</h2>
 
     <form action="">
-      <h3>Detalhes contato</h3>
-      Nome: <br />
-      <input type="text" /> <br />
+      <fieldset>
+        <legend>Detalhes contato</legend>
 
-      Email: <br />
-      <input type="text" /> <br />
+        <div>
+            <label for="nome">Nome:</label>  
+               <input type="text" name="nome" id="nome" /> 
+        </div>
 
-      URL: <br />
-      <input type="text" />
+        <div>
+            <label for="email">Email:</label>  
+              <input type="text" name="email" id="email" /> 
+        </div>
 
-      <h3>Comentarios</h3>
-      Message: <br />
-      <textarea name="" id="" cols="22" rows="5"></textarea>
+        <div>
+            <label for="URL">URL:</label>
+        <input type="text" name="URL" id="URL" /> 
+        </div>
 
-      <h3>Lembra de Mim</h3>
-      <br />
-      <input type="radio" name="s" /> sim <br />
-      <input type="radio" name="n" /> nao
+      </fieldset>
+
+      <fieldset>
+        <legend>Comentarios</legend>
+
+        <div>
+            <label for="message"> Message:</label> 
+            <textarea name="message" id="message"></textarea>
+        </div>
+       </fieldset>
+
+      <fieldset>
+        <legend>Lembra de Mim</legend>
+
+        <div>
+            <label for="">
+                  <input class="radio" type="radio" name="lembrar" id="sim" /> sim 
+            </label>
+
+        </div>
+
+        <div>
+            <label for="">
+                  <input class="radio" type="radio" name="lembrar" id="nao"  /> nao
+            </label>
+
+        </div>
+        
+
+      </fieldset>
     </form>
   </body>
 </html>
